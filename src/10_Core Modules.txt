@@ -1,0 +1,47 @@
+What are Modules?
+Modules basically are of two types w.r.t their usage.
+External and Core Modules.
+Core Modules are the builtin features of NodeJs and are of two types.
+
+Global Modules can be used directly, i.e. without importing, like console.log(), 
+console.log(__dirname), console.log(__filename)
+
+Non-global Modules can be imported with the help of require property. their examples are 
+file system (fs), http, buffer, path etc.
+
+How to create files in NodeJs:
+const fs = require("fs");
+fs.writeFileSync("Hello.html", "Code step by step");
+const fs = require("fs").writeFileSync;
+fs("abc.txt", "This is new file");
+
+How to create server in NodeJs:
+const http = require("http");
+http.createServer((request, response) => {
+    response.write("<h1>This is Hussain.</h1>");
+    response.end();
+}).listen(4500);
+
+Note that a function (in this case an arrow function) can be used as parameter in createServer function.
+Now, go to browser and type 'localhost: 4500' and press enter.
+
+Theory of Function:
+(i). Normal Function
+function dataControl(a, b) {
+    let c = a + b;
+    return c;
+};
+dataControl(10, 20);
+console.log(c);
+(ii). Arrow Function
+const dataControl = (a, b) => a + b;
+dataControl(10, 20);
+console.log(dataControl);
+
+External Modules or Package
+It can be used by creating 'package.json file'. (npm init)
+This file keeps the details of your code.
+npm i colors, npm i simple-node-loggers, npm i nodemon, npm i chalk etc. 
+
+buffer
+It is a temporary memory's location where a dir/file exists.

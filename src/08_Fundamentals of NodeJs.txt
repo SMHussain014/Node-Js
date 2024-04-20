@@ -1,0 +1,31 @@
+Fundamentals of Node Js:
+Node Js has the concept of var, let and const.
+It supports operators (of all types), conditions, loops, switch case, functions etc.
+It also support array, object and classes etc.
+For example:
+let x = 20;
+if (x === 20) {
+    console.log("Matched");
+}
+else {
+    console.log("UnMatched");
+};
+const arr = [2, 3, 5, 3, 7, 8];
+for (i = 0; i < 4; i++) {
+    console.log(arr[i]);
+};
+Use of filter functions:
+This function can only be used on a Array in NodeJs to filter it.
+(i). It rus loop on the Array:
+arr.filter((items) => {
+    console.log(items);
+});
+(ii). It gives specific value of the Array:
+let result = arr.filter((items) => {
+    return (items >= 5);
+});
+console.log(result);
+let result = arr.filter((items) => {
+    return (items === 3);
+});
+console.log(result);

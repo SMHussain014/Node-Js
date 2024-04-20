@@ -1,0 +1,50 @@
+What are Client and Server Sides Languages?
+HTML, CSS & JavaScript are client side languages that run on web browsers only.
+Node Js, Python, Java and PHP are server side languages.
+(A language that can be connected to Database is a server side language.)
+(Remember that Database is always kept on a server.)
+
+What is Node Js?
+However, Node Js is not a programming language.
+Node Js is a Server (run-time) Environment. Actually, it runs JavaScript on Server side meaning 
+thereby it can use JavaScript internally via Chrome's V8 Engine (V8 engine is written in C/C++). 
+It can connect with Database being server side language but Javascript cannot connect with 
+Database as it is a client side language.
+Node Js is single threading but async in its nature like JavaScript.
+
+How to Write Node Js?
+Its code and syntax is very similar to JavaScript but not the exactly same. It is easy to learn 
+for JavaScript programmers.
+It is free, open source and uses Chrome's V8 Engine to execute its code.
+
+Applications of Node Js:
+It is mostly used to make super fast APIs (Application Programming Interface) which can be 
+connected with Database for Web/ Mobile Apps. 
+Websites can also be made with it rarely.
+
+General:
+It was firstly released on May 27, 2009 and is written in C/C++ and JavaScript.
+By learning JavaScript and Node Js, you can become full stack developer.
+
+What is meant by synchronous and asynchronous Coding 
+If a programming language runs line by line, this behavior is called synchronous.
+If several commands or code lines runs at a time, i.e. without waiting the end of previous 
+command, this behavior is called asynchronous.
+
+How asynchronous function in NodeJs:
+(i)     Call Stack
+It has, by default, a main() which get started automatically. The main() remains in Call Stack
+and leaves at the end when all the executable events are done.
+At first, it always registers every event before its execution and create a list in which 
+order these event are to be executed.
+Secondly, if an event is immediately executable, its gives the desired output, otherwise it 
+send it to Node APIs so that it may complete its functionality.
+Usually, non-executable events belong to C/C++ which are send to APIs.
+(ii)    Node APIs (Application Programming Interface)
+The functionality is performed here and thereafter it send that event to Callback Queue.
+(iii)   Callback Queue
+A completed event waits here till such time Call Stack is empty. In other words, even the 
+main() leaves the Call Stack. When call stack is empty, Callback Queue send it to Call Stack 
+for its execution.
+
+The whole process is called 'Event Loop'.

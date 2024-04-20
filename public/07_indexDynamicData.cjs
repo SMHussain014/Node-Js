@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+// This method import a particular data item from a file
+console.log(`How to import a particular data item from a file.`);
+console.log(`This is an example of dynamic data:`);
+const _06_appDynamicData_cjs_1 = require("./06_appDynamicData.cjs");
+console.log(`The user's Full Name is : ${_06_appDynamicData_cjs_1.firstName} ${_06_appDynamicData_cjs_1.middleName} ${_06_appDynamicData_cjs_1.lastName}.`);
+console.log(`The user's current Age is: ${_06_appDynamicData_cjs_1.myAge}.`);
+console.log(`The user's Martial Status is: ${_06_appDynamicData_cjs_1.isMarried}.`);
+console.log(`This is an example of static data:`);
+const _06_appDynamicData_cjs_2 = require("./06_appDynamicData.cjs");
+console.log(`The value of x is: ${_06_appDynamicData_cjs_2.x}.`);
+console.log(`The value of y is: ${_06_appDynamicData_cjs_2.y}.`);
+console.log(`The value of z is: ${_06_appDynamicData_cjs_2.z}.`);
+console.log(`The value of fruitArray is:`, _06_appDynamicData_cjs_2.fruitArray);
+console.log(`The value of countingArray is:`, _06_appDynamicData_cjs_2.countingArray);
+let c = (0, _06_appDynamicData_cjs_2.add)(10, 20);
+console.log(`The value of add function is: ${c}.`);
+console.log(`The value of myObject is:`, _06_appDynamicData_cjs_2.myObject);
+console.log(`This method prints dynamic as well as static data.`);

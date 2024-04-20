@@ -1,0 +1,35 @@
+How to install Node Js
+Pre-requisite: Node Js is compatible for Windows 10 or its later versions.
+Please go to official web-site of Node Js, i.e. 'nodejs.org', and download LTS version.
+Now just run exe file and install it in your PC.
+
+What is NPM (Node Package Manager)?
+It installs external libraries (Here we call packages or modulus) for Node Js.
+It is automatically installed with Node Js.
+
+How to check whether Node Js and NPM is installed or not in your System?
+Run cmd in command prompt or open VS Code terminal.
+Type 'node -v' and press Enter.
+(If system shows version details, it is o.k.)
+Now, type 'npm -v' and press Enter.
+(If system shows version details, it is o.k.)
+Note that both the versions will not be same.
+Also make sure that command prompt or terminal was not open at the time of installation.
+Further, always restart your system before its usage.
+
+List of Recommended Code Editors:
+1.  Visual Studio Code
+2.  Atom
+3.  Sublime
+4.  WebStorm
+5.  Note Pad or Note Pad++
+6.  Dream Wavier
+
+How to make a Node Js file?
+You can give any name to a file but it is conventional to write its name as 'index', thereafter
+come the file extension which is '.js' as Node Js runs in JavaScript. So file name would be 
+'index.js'.
+
+How to run a Node Js file in terminal?
+To run a Node Js file in terminal, just type 'node file_name plus extension' and press Enter.
+Remember that 'console' is the part of web browser and Node js but not the part of JavaScript.

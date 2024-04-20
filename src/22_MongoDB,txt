@@ -1,0 +1,26 @@
+To install MongoDB, please go to "mongodb.com".  It must be community Server Package with latest version and msi setting.
+As soon as installation is completed, a program namely 'MongoDB Compass' will also stand installed. It will give GUI and easy to use.
+How to check whether it is installed on your system or not?
+Please go to your "C" drive, 'Program Files', MongoDB Folder, if there are two more folders namely data and bin, it means Mongodb is installed correctly.
+Alternatively, type cmd, press enter and type mongo and press enter, if any thing is showing it is ok. You can further check by typing 'show dbs' in cmd mode, and you will see three databases there.
+How to setup environment?
+if nothing is shown in cmd mode, set its path. to do so, copy the path of 'bin folder'.
+Now, type cmd and type there 'environment' and press enter, a windows will open.
+In that windows, click on 'environment variable', where you wil find the option of 'path', just path there, at the end, the path of bin folder and click ok. 
+Basics of MongoDB
+MongoDB is a noSQL database, i.e. non-structural database.
+The data is stored in 'collection'. 
+Collection has no column and rows like SQL.
+In place of table, it has collection which stores data in the form of 'objects'.
+Basic Command of MongoDB
+To show a database: show dbs and press enter.
+To create and enter into a database: use database_name and press enter.
+To create a Collection: db.createCollection('collection_name') and press enter.
+To show a collection: show collections and press enter.
+To delete a collection: db.collection_name.drop() and press enter.
+To delete a database: db.dropDatabase() and press enter.
+CRUD operation in MongoDB
+To insert data into collection: db.collection_name.insertOne({name: "Hussain", age: 43, sex: "Male", maritalStatus: "Married"}) and press enter.
+To read inserted data from collection: db.collection_name.find() and press enter.
+To update inserted data into collection: db.collection_name.updateOne({target}, {$set:{revised}}) and press enter.
+To delete inserted data from collection: db.collection_name.deleteOne({filed_name}) amd press enter.
